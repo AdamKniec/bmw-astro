@@ -1,0 +1,75 @@
+@use '../../../../styles/variables.scss';
+
+.introSection {
+  background-color: variables.$bg-dark;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .headerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .header {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      font-family: 'MontserratThin';
+      font-weight: 100;
+      font-size: 6.5rem;
+      line-height: 6rem;
+      @media (min-width: 768px) {
+        font-size: 9.5rem;
+        line-height: 8rem;
+      }
+      .first-part {
+        color: variables.$white;
+        display: block;
+      }
+      .keyword-bold {
+        font-family: 'MontserratBold';
+        color: variables.$main-red;
+        &:after {
+          content: '.';
+          color: variables.$white;
+        }
+      }
+    }
+    .buttonContainer {
+      position: relative;
+    }
+
+    .cta-arrow-wrapper {
+      width: 80px;
+      position: absolute;
+      right: 80px;
+      bottom: -80px;
+      color: white;
+      .cta-arrow-inner-wrapper {
+        position: relative;
+        span {
+          text-align: center;
+          position: absolute;
+          right: -20px;
+          transform: rotate(45deg);
+          margin-bottom: 20px;
+          top: -40px;
+          bottom: -60px;
+        }
+        svg {
+          position: absolute;
+        }
+      }
+    }
+  }
+  .scroll-icon-wrapper {
+    position: absolute;
+    right: -50px;
+    bottom: 50px;
+    opacity: 0.5;
+  }
+}

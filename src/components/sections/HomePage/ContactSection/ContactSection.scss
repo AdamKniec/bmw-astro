@@ -1,0 +1,71 @@
+@use '../../../../styles/variables.scss';
+
+.contactSection {
+  background-color: variables.$bg-dark;
+  color: variables.$white;
+  font-family: 'MontserratRegular';
+  padding-left: 5.125rem;
+  padding-right: 5.125rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  .sectionHeader {
+    font-size: 36px;
+    text-align: right;
+    margin: 0;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 54px;
+      text-align: right;
+    }
+    &:after {
+      content: '.';
+      color: variables.$main-red;
+      font-size: 100px;
+    }
+  }
+  .innerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .linksList {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+      font-size: 22px;
+      position: relative;
+      margin-top: 3rem;
+      padding-left: 0;
+      text-align: center;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      .list-item {
+        z-index: 2;
+        cursor: pointer;
+        @media (min-width: 768px) {
+          &:after {
+            content: '|';
+            color: variables.$white;
+            margin-left: 0.425rem;
+          }
+          &:last-child {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+      &:after {
+        content: url('../../../../images/paper-plane.svg');
+        position: absolute;
+        top: -180px;
+        left: -80px;
+        @media (min-width: 768px) {
+          left: -160px;
+        }
+        transform: scale(0.5);
+      }
+    }
+  }
+}

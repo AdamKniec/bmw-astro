@@ -1,0 +1,63 @@
+@use '../../../../styles/variables.scss';
+
+.supportSection {
+  margin-left: 2.125rem;
+  margin-right: 2.125rem;
+  font-family: 'MontserratRegular';
+  font-size: 36px; // change unit
+  margin-bottom: 6rem;
+  @media (min-width: 768px) {
+    margin-left: 5.125rem;
+    margin-right: 5.125rem;
+  }
+  .sectionHeader {
+    margin-top: 0;
+    text-align: center;
+    font-size: 36px;
+    @media (min-width: 768px) {
+      text-align: left;
+      font-size: 54px;
+    }
+    &:after {
+      content: '.';
+      color: variables.$main-red;
+      font-size: 100px;
+    }
+  }
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .questionParagraph {
+      font-size: 22px;
+      font-family: 'MontserratBold';
+      margin-bottom: 0;
+      margin-bottom: 0.5rem;
+      @media (min-width: 768px) {
+        font-size: 28px;
+      }
+
+      .color-indication {
+        color: variables.$main-red;
+      }
+    }
+    .suggestedActionParagraph {
+      font-size: 18px;
+      margin-top: 0;
+      color: #485a62;
+      .social-media-link {
+        color: variables.$main-red;
+        text-decoration: underline;
+      }
+    }
+    .image-wrapper {
+      display: none;
+      @media (min-width: 1000px) {
+        display: block;
+        width: 230px;
+        height: 550px;
+      }
+    }
+  }
+}

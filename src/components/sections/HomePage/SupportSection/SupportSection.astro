@@ -1,0 +1,57 @@
+---
+import './SupportSection.scss'
+import { Image } from 'astro:assets'
+import supportImage from '../../../../images/support.svg'
+---
+
+<section class="supportSection">
+  <div class="sectionWrapper">
+    <h2 class="sectionHeader">Wsparcie</h2>
+    <div class="contentWrapper">
+      <div class="wrapper">
+        <div>
+          <p class="questionParagraph">
+            Znalazłeś buga lub bł<span class="color-indication">on</span>d
+            merytoryczny?
+          </p>
+          <p class="suggestedActionParagraph">
+            Zgłoś issue na <a
+              class="social-media-link"
+              href="https://github.com/AdamKniec"
+              target="_blank">GitHubie</a
+            >
+          </p>
+        </div>
+        <div>
+          <p class="questionParagraph">
+            Chcesz się skontaktować w innej sprawie?
+          </p>
+          <p class="suggestedActionParagraph">
+            Napisz na
+            <a
+              href="mailto:adam.k.kniec@gmail.com"
+              class="social-media-link"
+              target="_blank">adam.k.kniec@gmail.com</a
+            >
+          </p>
+        </div>
+        <div>
+          <p class="questionParagraph">Umiesz w instagramy?</p>
+          <p class="suggestedActionParagraph">
+            Zapraszam na mojego <a
+              href="https://www.instagram.com/bolimnieweb/"
+              class="social-media-link"
+              target="_blank">instagrama</a
+            >!
+          </p>
+        </div>
+      </div>
+      <div class="image-wrapper">
+        <Image
+          src={supportImage}
+          alt="Kolorowa ilustracja mężczyzny trzymającego serce na dłoni"
+        />
+      </div>
+    </div>
+  </div>
+</section>

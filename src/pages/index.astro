@@ -1,7 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import IntroSection from '../components/sections/HomePage/IntroSection/IntroSection.astro'
+import ArrowImage from '../assets/arrow.svg'
+import ActivitySection from '../components/sections/HomePage/ActivitySection/ActivitySection.astro'
+import PartnersSection from '../components/sections/HomePage/PartnersSection/PartnersSection.astro'
+import SupportSection from '../components/sections/HomePage/SupportSection/SupportSection.astro'
+import ContactSection from '../components/sections/HomePage/ContactSection/ContactSection.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+  <main>
+    <IntroSection />
+    <ActivitySection />
+    <PartnersSection />
+    <SupportSection />
+    <ContactSection />
+  </main>
 </Layout>

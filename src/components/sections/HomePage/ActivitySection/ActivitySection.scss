@@ -1,0 +1,77 @@
+@use '../../../../styles/variables.scss';
+
+.activitySection {
+  font-family: MontserratRegular;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
+  position: relative;
+  @media (min-width: 768px) {
+    padding-left: 5.125rem;
+    padding-right: 5.125rem;
+  }
+  .innerWrapper {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .sectionHeader {
+      font-size: 36px;
+      margin-top: 0;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 54px;
+        text-align: left;
+      }
+      &:after {
+        content: '.';
+        color: variables.$main-red;
+        font-size: 100px;
+      }
+    }
+    .contentWrapper {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      padding-bottom: 4.125rem;
+      @media (min-width: 1000px) {
+        padding-bottom: 0;
+      }
+      .imageWrapper {
+        height: 700px;
+        overflow: hidden;
+        position: relative;
+        position: relative;
+        width: 40%;
+        display: none;
+        @media (min-width: 1000px) {
+          display: block;
+        }
+        img {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: -50px;
+        }
+      }
+      .activityBoxesWrapper {
+        max-width: 500px;
+        .counter {
+          color: variables.$main-red;
+          font-family: MontserratBold;
+          font-size: 32px;
+        }
+        .platformName {
+          font-size: 2.25rem;
+          font-family: MontserratRegular;
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+        }
+        .activityDescription {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+}

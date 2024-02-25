@@ -1,0 +1,33 @@
+---
+import './Nav.scss'
+import pillImage from '../../../images/pill.svg'
+import { Image } from 'astro:assets'
+---
+
+<nav class="navigationBar">
+  <Image
+    src={pillImage}
+    alt="asd"
+    width={'30'}
+    height={'30'}
+    format="webp"
+    class="pill-image"
+  />
+  <ul class="list">
+    <li class="listItem">
+      <a href="/blog">Blog</a>
+    </li>
+    <li class="listItem">
+      <a href="/o-autorze">O autorze</a>
+    </li>
+    <li class="listItem">
+      <a href="/kontakt">Kontakt</a>
+    </li>
+    <li class="listItem">
+      <a href="/wspolpraca">Współpraca</a>
+    </li>
+    <li class="listItem">
+      <a href="/mentoring">Mentoring</a>
+    </li>
+  </ul>
+</nav>
