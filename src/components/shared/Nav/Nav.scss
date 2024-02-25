@@ -1,0 +1,45 @@
+@use '../../../styles/variables.scss';
+
+.navigationBar {
+  position: fixed;
+  top: 0;
+  font-family: 'MontserratThin';
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$bg-dark;
+  width: 100%;
+  z-index: 99;
+  .pill-image {
+    position: absolute;
+    left: 80px;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 2.0625rem;
+    display: flex;
+    padding: 0;
+    gap: 0.625rem;
+    li {
+      &:after {
+        content: '|';
+        color: variables.$white;
+        margin-left: 0.425rem;
+      }
+      &:last-child {
+        &:after {
+          content: '';
+        }
+      }
+      a {
+        color: variables.$white;
+        text-decoration: none;
+        &:hover {
+          color: variables.$main-red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+---
+import './IntroSection.scss'
+import Nav from '../../../shared/Nav/Nav.astro'
+import Button from '../../../shared/Button/Button.astro'
+import ScrollIcon from '../../../shared/ScrollIcon/ScrollIcon.astro'
+import arrowImage from '../../../../images/arrow.svg'
+import { Image } from 'astro:assets'
+---
+
+<section class="introSection">
+  <Nav />
+  <div class="headerWrapper">
+    <h1 class="header">
+      <span class="first-part">boli mnie</span>
+      <span class="keyword-bold">web</span>
+    </h1>
+    <div class="buttonContainer">
+      <Button>Blog</Button>
+    </div>
+
+    <div class="cta-arrow-wrapper">
+      <div class="cta-arrow-inner-wrapper">
+        <span>Wpadaj na bloga</span>
+        <Image src={arrowImage} alt="" class="arrow-cta" />
+      </div>
+    </div>
+  </div>
+  <div class="scroll-icon-wrapper">
+    <ScrollIcon />
+  </div>
+</section>

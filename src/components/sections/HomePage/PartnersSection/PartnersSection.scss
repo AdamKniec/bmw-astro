@@ -1,0 +1,48 @@
+@use '../../../../styles/variables.scss';
+
+.partnersSection {
+  background-color: variables.$bg-dark;
+  color: variables.$white;
+  font-family: 'MontserratRegular';
+  padding-left: 5.125rem;
+  padding-right: 5.125rem;
+  padding-bottom: 5.125rem;
+  .sectionHeader {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 4rem;
+    @media (min-width: 768px) {
+      padding-top: 0;
+      text-align: right;
+      font-size: 54px;
+      margin-top: 0;
+    }
+    &:after {
+      content: '.';
+      color: variables.$main-red;
+      font-size: 50px;
+      @media (min-width: 768px) {
+        font-size: 100px;
+      }
+    }
+  }
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 130px;
+      height: 130px;
+      margin-top: 2rem;
+      filter: grayscale(1);
+      transition: 0.2s;
+      &:hover {
+        filter: grayscale(0);
+        transition: 0.2s;
+      }
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../../styles/variables.scss';
+
+.button {
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  box-shadow:variables.$button-cta-shadow;
+}

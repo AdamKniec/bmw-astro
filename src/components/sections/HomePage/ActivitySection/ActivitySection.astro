@@ -1,0 +1,45 @@
+---
+import './ActivitySection.scss'
+import phoneImage from '../../../../images/phone.png'
+import { Image } from 'astro:assets'
+---
+
+<section class="activitySection">
+  <div class="innerWrapper">
+    <h2 class="sectionHeader">Aktywność</h2>
+    <div class="contentWrapper">
+      <div class="imageWrapper">
+        <Image src={phoneImage} alt="Zdjęcie smartfona" width="500" />
+      </div>
+      <div class="activityBoxesWrapper">
+        <div>
+          <span class="counter">1534</span>
+          <p class="platformName">Stack Overflow</p>
+          <p class="activityDescription">
+            This is the phase where I dive deep into your world and get to know
+            you. Before I can properly design your high-performing website, I
+            need to understand you, your pain-points, and your audience.
+          </p>
+        </div>
+        <div>
+          <span class="counter">1534</span>
+          <p class="platformName">Stack Overflow</p>
+          <p class="activityDescription">
+            This is the phase where I dive deep into your world and get to know
+            you. Before I can properly design your high-performing website, I
+            need to understand you, your pain-points, and your audience.
+          </p>
+        </div>
+        <div>
+          <span class="counter">1534</span>
+          <p class="platformName">Stack Overflow</p>
+          <p class="activityDescription">
+            This is the phase where I dive deep into your world and get to know
+            you. Before I can properly design your high-performing website, I
+            need to understand you, your pain-points, and your audience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
